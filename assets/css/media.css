@@ -18,17 +18,6 @@
 	.services .service-items .service-item h3 {
 		font-size: 16px;
 	}
-/*	.portfolio #slider {
-		width: 700px;
-	}
-.portfolio .slide-wrapper .slide {	
-	width: 180px;
-	/*width: 163px;
-	height: 163px;
-	}
-.portfolio .slide img {
-	width: 100%;
-}	*/
 
 }
 @media (min-width: 481px) and (max-width:759px)  {
@@ -82,14 +71,6 @@
 	.portfolio #slider {
 		width: 450px;
 	}
-/*.portfolio .slide-wrapper .slide {	
-	width: 180px;
-	/*width: 163px;
-	height: 163px;
-	}
-.portfolio .slide img {
-	width: 100%;
-}	*/
 }
 	
 
@@ -154,17 +135,6 @@
 	  .services .service-items .service-item {
 	  	width: 85%;
 	  }
-	/*.portfolio #slider {
-		width: 300px;
-	}
-	.portfolio .slide-wrapper .slide {	
-	width:250px;
-	/*width: 163px;
-	height: 163px;
-	}
-	.portfolio .slide img {
-	width: 100%;
-} */
 	.portfolio .btn {
 		width:50%;
 	}
