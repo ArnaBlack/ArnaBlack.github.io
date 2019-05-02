@@ -73,27 +73,22 @@
 		<section class="portfolio">
 			<div class="container">
 				<h2>Наше творчество</h2>
-					<div id="slider">
-							<ul class="slide-wrapper clearfix">
-								<li class="slide slide-active">
-									<img width="300" height="300" src="./assets/img/cat.jpg" alt="кот">
-								</li>
-								<li class="slide slide-active">
-									<img width="300" height="300" src="./assets/img/vest.jpg" alt="вест">
-								</li>
-								<li class="slide slide-active">
-									<img width="300" height="300" src="./assets/img/shpits.jpg" alt="шпиц">
-								</li>
-								<li class="slide slide-hidden">
-									<img width="300" height="300" src="./assets/img/york.jpg" alt="йорк">
-								</li>
-								<li class="slide slide-hidden">
-									<img width="300" height="300" src="./assets/img/grifon.jpg" alt="грифон">
-								</li>
-							</ul>
-
-							<a href="#" class="slide-btn btn-prev">&lt;</a>
-							<a href="#" class="slide-btn btn-next">&gt;</a>	
+					<div class="center">
+								<div>
+									<img  src="./assets/img/cat.jpg" alt="кот">
+								</div>
+								<div>
+									<img  src="./assets/img/vest.jpg" alt="вест">
+								</div>
+								<div>
+									<img src="./assets/img/shpits.jpg" alt="шпиц">
+								</div>
+								<div>
+									<img  src="./assets/img/york.jpg" alt="йорк">
+								</div>
+								<div>
+									<img src="./assets/img/grifon.jpg" alt="грифон">
+								</div>
 					</div>
 			</div>		
 			<a href="https://www.instagram.com/bastgroom/" class="btn" target="_blank">Подробнее</a>
@@ -153,6 +148,35 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+$(document).ready(function(){
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+});
+</script>
 </body>
 </html>
