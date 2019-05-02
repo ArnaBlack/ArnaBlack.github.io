@@ -6,10 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Зоосалон BastGROOM</title>
      <link href="./assets/css/normalize.min.css" rel="stylesheet"> 
-	
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/media.css">
-</head
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+</head>
 <body>
 	<header>
 		<div class="container">
@@ -89,13 +91,7 @@
 									<img width="300" height="300" src="./assets/img/grifon.jpg" alt="грифон">
 								</li>
 							</ul>
-							<div id="slide-nav">
-								<a href="#" data-slide="0" class="current"></a>
-								<a href="#" data-slide="1"></a>
-								<a href="#" data-slide="2"></a>
-								<a href="#" data-slide="3"></a>
-								<a href="#" data-slide="4"></a>
-							</div>
+
 							<a href="#" class="slide-btn btn-prev">&lt;</a>
 							<a href="#" class="slide-btn btn-next">&gt;</a>	
 					</div>
@@ -135,10 +131,9 @@
 	</footer>
 
 <script>
-	var linkNav = document.querySelectorAll('[href^="#"]'),
+	var linkNav = document.querySelector('[href="#feedback"]'),
     V = 0.5;  // скорость, может иметь дробное значение через точку
-for (var i = 0; i < linkNav.length; i++) {
-  linkNav[i].onclick = function(){
+  linkNav.onclick = function(){
     var w = window.pageYOffset,
         hash = this.href.replace(/[^#]*(.*)/, '$1');
         t = document.querySelector(hash).getBoundingClientRect().top,
@@ -153,7 +148,11 @@ for (var i = 0; i < linkNav.length; i++) {
     }
     return false;
   }
-}
-</script>	
+
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
