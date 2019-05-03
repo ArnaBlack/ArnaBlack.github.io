@@ -29,7 +29,11 @@ header {
     background-position: center;
     background-size: cover;
 }
-
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .container {
     width: 96%;
