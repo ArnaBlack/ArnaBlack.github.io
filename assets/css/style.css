@@ -52,6 +52,10 @@ header {
 }
 .btn:hover {
 	border-radius: 30px;
+	outline: none;
+}
+.btn:focus {
+	outline: none;
 }
 .header-top {
 	display: -webkit-box;

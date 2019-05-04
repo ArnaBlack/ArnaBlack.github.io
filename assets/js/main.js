@@ -24,5 +24,30 @@ $('.center').slick({
     }
   ]
 });
-    $("#user-phone").mask("+7 (999) 99-99-999");
+    $("#user-phone").mask("+7(999)999-99-99");
+    $("#submit").click(function()
+        {
+                $("#erconts").fadeIn(500);
+                $.ajax(
+                {
+                        type: "POST",
+                        url: "send.php", // Адрес обработчика
+                        data: $("#callbacks").serialize(),
+                        error:function()
+                        {
+                                $("#erconts").html("Произошла ошибка!");
+                        },
+                        beforeSend: function()
+                        {
+                                $("#erconts").html("Отправляем данные...");
+                        },
+                        success: function(result)
+                        {
+                                $("#erconts").html(result);
+                                checkThis();
+                                $('#callbacks').find('input[type=text], input[type=phone]').val('');
+                        }
+                });
+        return false;
+        });
 });

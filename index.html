@@ -40,12 +40,15 @@
 			<h2 class="title">Запишите своего питомца на комплекс сейчас</h2>
 			<p> и получите <span>скидку 25%</span> на ультразвуковое удаление зубного камня без наркоза!</p>
 			<div class="feedback">
-				<form class="feedback-form" action="" method="post">
-					<input id="user-name" type="text" name="user-name" placeholder="имя">
-					<input id="user-phone" type="phone" name="user-phone" pattern="[0-9]{10}" placeholder="телефон" required>
-					<input type="submit" class="btn" value="Записаться">
+				<form class="feedback-form" id ="callbacks" action="" method="post">
+					<input id="user-name" type="text" name="name" placeholder="имя">
+					<input id="user-phone" type="phone" name="phone" pattern="[0-9]{10}" placeholder="телефон" required>
+					<input type="submit" id="submit" class="btn" value="Записаться">
 				</form>
 			<span>Ваши данные не будут переданы 3-им лицам</span>	
+			</div>
+			<div id = "erconts" style = "display: none">
+				
 			</div>
 		</section>
 		<section class="services">
@@ -126,7 +129,8 @@
 	</footer>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.js"></script>
  <script src="assets/js/jquery.maskedinput.js"></script>
