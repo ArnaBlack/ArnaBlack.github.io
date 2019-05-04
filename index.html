@@ -45,11 +45,13 @@
 					<input id="user-phone" type="phone" name="phone" pattern="[0-9]{10}" placeholder="телефон" required>
 					<input type="submit" id="submit" class="btn" value="Записаться">
 				</form>
-			<span>Ваши данные не будут переданы 3-им лицам</span>	
+				<span>Ваши данные не будут переданы 3-им лицам</span>	
 			</div>
-			<div id = "erconts" style = "display: none">
-				
-			</div>
+			<div class="popup">
+				<div class="close-btn">&times;</div>
+				<div id = "erconts"></div>
+			</div>	
+			<div class="overlay"></div>		
 		</section>
 		<section class="services">
 			<h2>Какие услуги?</h2>
@@ -133,8 +135,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.js"></script>
- <script src="assets/js/jquery.maskedinput.js"></script>
- <script type="text/javascript" src="assets/js/main.js"></script>
+<script src="assets/js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 <script>
 	var linkNav = document.querySelector('[href="#feedback"]'),
     V = 0.5;  // скорость, может иметь дробное значение через точку

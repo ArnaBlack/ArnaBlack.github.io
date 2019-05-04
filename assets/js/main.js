@@ -25,8 +25,15 @@ $('.center').slick({
   ]
 });
     $("#user-phone").mask("+7(999)999-99-99");
+    var modal = $('.popup'),
+        overlay = $('.overlay'),
+        close = $('.close-btn');
+              close.click(function() {
+                     modal.toggleClass('popup-show');
+                      });
     $("#submit").click(function()
         {
+                modal.toggleClass('popup-show');
                 $("#erconts").fadeIn(500);
                 $.ajax(
                 {
@@ -35,7 +42,7 @@ $('.center').slick({
                         data: $("#callbacks").serialize(),
                         error:function()
                         {
-                                $("#erconts").html("Произошла ошибка!");
+                                $("#erconts").html("Произошла ошибка! Повторите попытку");
                         },
                         beforeSend: function()
                         {
