@@ -51,7 +51,7 @@ $('.center').slick({
                         success: function(result)
                         {
                                 $("#erconts").html(result);
-                                $('#callbacks').find('input[type=text], input[type=phone]').val('');
+                                $('#callbacks').find('input[type=text], input[type=tel]').val('');
                         }
                 });
         return false;

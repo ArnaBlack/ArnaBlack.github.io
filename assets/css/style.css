@@ -259,7 +259,7 @@ main h2 {
 	background-color: rgba(54, 37, 38,.8);
 }
  .feedback-form input[type="text"],
-  .feedback-form input[type="phone"] {
+  .feedback-form input[type="tel"] {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 210px;
@@ -273,12 +273,12 @@ main h2 {
 	border-radius: 10px;
 
   }
-   .feedback-form input[type="phone"] {
+   .feedback-form input[type="tel"] {
    	margin-left: 10px;
    	margin-right: 10px;
    }
 .feedback-form input[type="text"]:focus,
-.feedback-form input[type="phone"]:focus {
+.feedback-form input[type="tel"]:focus {
     border-color: #ff6633;
     outline:none;
 }
